@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Soulofox Test build</title>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+    <script>
+      const firebaseDevConfig = {
+        apiKey: "AIzaSyDUdHIC-_JPS-9VPfuqIas13psxn0l4LY8",
+        authDomain: "soulofox-dev.firebaseapp.com",
+        databaseURL: "https://soulofox-dev-default-rtdb.firebaseio.com",
+        projectId: "soulofox-dev",
+        storageBucket: "soulofox-dev.appspot.com",
+        messagingSenderId: "755948495289",
+        appId: "1:755948495289:web:6335af731368a3ebbe1668"
+      };
+      const firebaseProdConfig = {
+        apiKey: "AIzaSyBWQk-7K5UHa5SwLFv-1-xZrjXbXjgSSYE",
+        authDomain: "soulofox-prod.firebaseapp.com",
+        databaseURL: "https://soulofox-prod-default-rtdb.europe-west1.firebasedatabase.app",
+        projectId: "soulofox-prod",
+        storageBucket: "soulofox-prod.appspot.com",
+        messagingSenderId: "12723998093",
+        appId: "1:12723998093:web:819b1eb7d213c4377401c4"
+      };
+      firebase.initializeApp(firebaseProdConfig);
+    </script>
+
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
